@@ -57,6 +57,8 @@ sends a single ICMP/ICMPv6 probe; it does not trace intermediate hops.
 
 ## Tests
 
+CI supports Python 3.11, 3.12, and 3.13.
+
 Run the unit tests with:
 
 ```powershell
@@ -65,6 +67,11 @@ python -m unittest -v
 
 Tests use mocks for packet transmission and do not intentionally send probes.
 Packet-construction tests use Scapy locally.
+
+GitHub Actions runs this suite on pushes to `main` and pull requests from
+branches in this repository. Fork pull requests do not execute the workflow.
+The workflow has read-only repository permissions, and packet-send tests use
+mocks.
 
 ## Dependency updates
 
