@@ -66,6 +66,12 @@ python -m unittest -v
 Tests use mocks for packet transmission and do not intentionally send probes.
 Packet-construction tests use Scapy locally.
 
+## Dependency updates
+
+Dependabot checks Python dependencies and GitHub Actions weekly and opens
+update pull requests for review. Review dependency changes before merging; no
+automatic merging is enabled.
+
 ## License
 
 No license file is included. Confirm the applicable license with the project
